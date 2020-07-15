@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+      <style>
+
+body{
+      font-family: 'Roboto', sans-serif;
+      background-image: url("leaves.png");
+}
+
+.med{
+  font-size:24px;
+}
+
+.ion-icon{
+  color:green;/*color doesnt work with outline //sharpis same as filled in this case*/
+  font-size: 64px;
+}
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mt-5">
+        <div class="card-header text-center">
+            <ion-icon class="text-success" size="large" name="leaf"></ion-icon>
+            <b class="display-6 text-muted">CropService</b>
+            <p class="display-4 text-muted">Compras de Insumos</p>
+        </div>
+        <div class="card-body">
+          <hr class="bg-success mx-5">
+      <div class="container">
+      <div class="row offset-11 my-2">
+          <ion-icon style="color:green;" name="add-circle"></ion-icon>
+      </div>
+      </div>
+    <div class="container">
+      <form>
+          <div class="form-group row">
+            <label for="inputEmail3" style="font-size:24px;" class="ml-auto col-sm-4 col-form-label">ID Insumo</label>
+            <div class="col-sm-6 mr-auto">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="...">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" style="font-size:24px;" class=" ml-auto col-sm-4 col-form-label">Nombre Insumo</label>
+            <div class="col-sm-6 mr-auto">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="...">
+            </div>
+          </div>
+          <div class="form-group row">
+              <label for="inputPassword3" style="font-size:24px;" class="offset-1 col-sm-4 col-form-label">Unidades</label>
+              <div class="col-sm-6 mr-auto">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="...">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" style="font-size:24px;" class="offset-1 col-sm-4 col-form-label">Precio Unitario</label>
+              <div class="col-sm-6 mr-auto">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="...">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" style="font-size:24px;" class="offset-1 col-sm-4 col-form-label">Fecha</label>
+              <div class="col-sm-6 mr-auto">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="...">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" style="font-size:24px;" class="offset-1 col-sm-4 col-form-label">Monto</label>
+              <div class="col-sm-6 mr-auto">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="...">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" style="font-size:24px;" class="offset-1 col-sm-4 col-form-label">Proveedor</label>
+              <div class="col-sm-6 mr-auto">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="...">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" style="font-size:24px;" class="offset-1 col-sm-4 col-form-label">Tel. Proveedor</label>
+              <div class="col-sm-6 mr-auto">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="...">
+              </div>
+            </div>
+      </form>
+    </div>
+        </div>
+        <hr class="bg-success mx-5">
+      </div>
+    </div>
+    <script>/*this code doesnt work with ->  src="" async defer*/
+      var myCollection = document.getElementsByTagName("ion-icon");
+      var i;
+      for (i = 0; i < myCollection.length; i++) {
+        myCollection[i].setAttribute("size","large");
+      }
+    </script>
+  </body>
+</html>
