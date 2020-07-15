@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+      <style>
+
+body{
+      font-family: 'Roboto', sans-serif;
+      background-image: url("leaves.png");
+}
+
+.med{/*custom font size*/
+  font-size:24px;
+}
+
+.ion-icon{
+  color:green;
+  font-size: 64px;
+}
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mt-5">
+        <div class="card-header text-center">
+            <ion-icon class="text-success" size="large" name="leaf"></ion-icon>
+            <b class="display-6 text-muted">CropService</b>
+            <p class="display-4 text-muted">Login Administrador</p>
+        </div>
+        <div class="card-body">
+          <hr class="bg-success mx-5">
+          <form>
+            <div class="form-group">
+              <h4 for="exampleInputEmail1">Correo o Nombre de Usuario</h4>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="...">
+            </div>
+            <div class="form-group">
+              <h4 for="exampleInputPassword1">Contraseña</h4>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn btn-lg btn-success">Ingresar</button>
+          </form>
+          <hr class="bg-success mx-5">
+        </div>
+      </div>
+    </div>
+    <script>
+      var myCollection = document.getElementsByTagName("ion-icon");
+      var i;
+      for (i = 0; i < myCollection.length; i++) {
+      myCollection[i].setAttribute("size","large");
+      }
+    </script>
+  </body>
+</html>
